@@ -1,0 +1,74 @@
+.body{
+    background: url("../snakegame_background.jpg");
+   min-height: 100vh;
+   background-size: 100vw 100vh;
+   z-index : -1 ;
+   display : flex ;
+   justify-content : center ;
+   align-items: center ;
+}
+#board{
+    background : linear-gradient(rgb(177, 236, 138),yellow) ;
+    width : 90vmin ;
+    height : 82vmin ;
+    display : grid ;
+    grid-template-rows : repeat(18,1fr) ;
+    grid-template-columns : repeat(18,1fr) ;
+}
+#scorebox{
+    position: absolute;
+    top: 9px;
+    right: 155px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    background :rgb(177, 236, 138) ;
+}
+#highscorebox{
+    position: absolute;
+    top: 60px;
+    right: 90px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    background :rgb(177, 236, 138) ;
+}
+.head{
+    background: linear-gradient(rgb(24, 240, 124), rgb(228, 8, 129));
+    border: 2px solid rgb(34, 4, 34); 
+    transform: scale(1.02);
+    border-radius: 9px;
+}
+.snake{
+   background-color : brown ;
+   border: .25vmin solid white ;
+   border-radius: 12px ;
+}
+.food{
+   background-color : purple ;
+   border : .25vmin solid black ;
+   border-radius : 4px ;
+}
+#Modes{
+    background-color: salmon;
+    padding:10px ;
+    font-size : 29px ;
+    position:absolute ;
+    top: 250px ;
+    left: 200px ;
+    font-family: 'New Tegomin', serif;
+    border : .3vmin solid black ;
+    border-radius : 2px ;
+    display:grid ;
+    grid-template-rows: repeat(4,1fr);
+}
+.tough{
+    background-color: springgreen;
+    margin-top : 5px ;
+    border : .25vmin solid black ;
+    border-radius : 4px ;
+}
+.tough:hover{
+    transform: scale(1.1) ;
+
+}
